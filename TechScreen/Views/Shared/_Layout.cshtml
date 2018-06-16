@@ -4,8 +4,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - Tech Screen</title>
+
+    @Scripts.Render("https://code.jquery.com/jquery-3.3.1.js")
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Styles.Render("https://cdn.datatables.net/1.10.18/css/jquery.dataTables.min.css")
+    @Scripts.Render("https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js")
+
+    @RenderSection("scripts", required: true)
+
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -34,8 +42,5 @@
         </footer>
     </div>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
 </body>
 </html>
