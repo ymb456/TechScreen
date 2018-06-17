@@ -19,11 +19,22 @@
 
         <div ng-controller="secondTabCtrl" ng-init="downloadData()">
 
-            <ul class="todo-list">
+            <ul class="todo-list" style="list-style-type: none">
                 <li ng-repeat="item in Items">
-                    <div class="view">
-                        <input class="toggle" type="checkbox">
-                        <label>{{ item.Item}}</label>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <div class="view">
+                                <input class="toggle" type="checkbox">
+                                <label>{{ item.Item}}</label>
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+
+                            <div class="view">
+                                <input class="toggle" type="checkbox">
+                                <label>{{ item.Item}}</label>
+                            </div>
+                        </div>
                     </div>
                 </li>
             </ul>
