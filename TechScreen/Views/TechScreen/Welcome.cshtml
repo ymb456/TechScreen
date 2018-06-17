@@ -1,18 +1,36 @@
-﻿
-
-@{
+﻿@{
     ViewBag.Title = "Second Tab";
 }
 
 @section scripts
 {
 
+    @Scripts.Render("~/Scripts/angular.js")
 
     @Scripts.Render("~/Scripts/TechScreenScripts/SecondTAb.js")
-
 
 }
 
 <h2>Second Tab</h2>
 
-<p>Hello from our View Template!</p>
+<div id="master_table">
+
+    <div ng-app="secondTab">
+
+        <div ng-controller="secondTabCtrl" ng-init="downloadData()">
+
+            <ul class="todo-list">
+                <li ng-repeat="item in Items">
+                    <div class="view">
+                        <input class="toggle" type="checkbox">
+                        <label>{{ item.Item}}</label>
+                    </div>
+                </li>
+            </ul>
+
+    
+        </div>
+    </div>
+</div>
+
+

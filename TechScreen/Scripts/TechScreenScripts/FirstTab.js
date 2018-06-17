@@ -1,17 +1,4 @@
-﻿angular.module('TechScreenApp', [])
-    .controller('FirstTabCtrl', function ($scope, $http) {
-        $scope.answered = false;
-        $scope.title = "loading question...";
-        $scope.options = [];
-        $scope.correctAnswer = false;
-        $scope.working = false;
-
-        $scope.answer = function () {
-            return $scope.correctAnswer ? 'correct' : 'incorrect';
-        };
-    });
-
-angular.module('showcase.angularWay', [])
+﻿angular.module('showcase.angularWay', [])
     .controller('AngularWayCtrl', AngularWayCtrl).directive('myPostRepeatDirective', function () {
         return function ($scope, element, attrs) {
             if ($scope.$last) {
@@ -29,8 +16,4 @@ function AngularWayCtrl($scope, $http) {
             $scope.persons = data.data;
         });
     }
-
-
-
-
 }
