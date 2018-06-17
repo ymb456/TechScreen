@@ -92,7 +92,6 @@ C:\Users\Jack\source\repos\TechScreen\TechScreen\bin\Microsoft.AI.DependencyColl
 C:\Users\Jack\source\repos\TechScreen\TechScreen\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\Jack\source\repos\TechScreen\TechScreen\bin\Microsoft.AI.Web.xml
 C:\Users\Jack\source\repos\TechScreen\TechScreen\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Jack\source\repos\TechScreen\TechScreen\obj\Debug\TechScreen.csprojAssemblyReference.cache
 C:\Users\Jack\source\repos\TechScreen\TechScreen\obj\Debug\TechScreen.csproj.CoreCompileInputs.cache
 C:\Users\Jack\source\repos\TechScreen\TechScreen\obj\Debug\TechScreen.csproj.CopyComplete
 C:\Users\Jack\source\repos\TechScreen\TechScreen\obj\Debug\TechScreen.dll
