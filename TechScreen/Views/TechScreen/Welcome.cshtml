@@ -1,5 +1,7 @@
 ﻿@{
-    ViewBag.Title = "Second Tab";
+                /**/
+
+                ViewBag.Title = "Second Tab";
 }
 
 @section scripts
@@ -13,35 +15,44 @@
 
 <h2>Second Tab</h2>
 
-<div id="master_table">
-
-    <div ng-app="secondTab">
-
-        <div ng-controller="secondTabCtrl" ng-init="downloadData()">
-
-            <ul class="todo-list" style="list-style-type: none">
-                <li ng-repeat="item in Items">
-                    <div class="row">
-                        <div class="col-xs-6">
-                            <div class="view">
-                                <input class="toggle" type="checkbox">
-                                <label>{{ item.Item}}</label>
-                            </div>
-                        </div>
-                        <div class="col-xs-6">
-
-                            <div class="view">
-                                <input class="toggle" type="checkbox">
-                                <label>{{ item.Item}}</label>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-
+<div class="main-container">
+    <p id="buttons">
+        <button type="button"><i class="fa fa-arrow-left fa-lg"></i> </button>
+        <br />
+        <button type="button"><i class="fa fa-arrow-right fa-lg"></i> </button>
+    </p>
     
+    <div id="master_table">
+
+        <div ng-app="secondTab">
+
+            <div ng-controller="secondTabCtrl" ng-init="downloadData()">
+
+                <ul class="todo-list" style="list-style-type: none">
+                    <li ng-repeat="item in Items">
+                        <div class="row">
+                            <div class="col-xs-10">
+                                <div class="view">
+                                    <input class="toggle" type="checkbox">
+                                    <label>{{ item.Item}}</label>
+                                </div>
+                            </div>
+                            <div class="col-xs-2">
+
+                                <div class="view">
+                                    <input class="toggle" type="checkbox">
+                                    <label>{{ item.Item}}</label>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+
+            </div>
         </div>
     </div>
+
 </div>
 
 

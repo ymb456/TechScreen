@@ -22,3 +22,17 @@ select,
 textarea {
     max-width: 280px;
 }
+
+div.main-container {
+    margin-right: 25%;
+    position: relative
+}
+
+div.main-container #buttons {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}

@@ -96,3 +96,4 @@ C:\Users\Jack\source\repos\TechScreen\TechScreen\obj\Debug\TechScreen.csproj.Cor
 C:\Users\Jack\source\repos\TechScreen\TechScreen\obj\Debug\TechScreen.csproj.CopyComplete
 C:\Users\Jack\source\repos\TechScreen\TechScreen\obj\Debug\TechScreen.dll
 C:\Users\Jack\source\repos\TechScreen\TechScreen\obj\Debug\TechScreen.pdb
+C:\Users\Jack\source\repos\TechScreen\TechScreen\obj\Debug\TechScreen.csprojAssemblyReference.cache
