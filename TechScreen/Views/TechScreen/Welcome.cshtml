@@ -1,7 +1,7 @@
 ﻿@{
-                /**/
+    /**/
 
-                ViewBag.Title = "Second Tab";
+    ViewBag.Title = "Second Tab";
 }
 
 @section scripts
@@ -12,47 +12,76 @@
     @Scripts.Render("~/Scripts/TechScreenScripts/SecondTAb.js")
 
 }
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 10px;
+        height: 400px;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+</style>
+
+
 
 <h2>Second Tab</h2>
+<div id="master_table">
+    <div ng-app="secondTab">
+        <div ng-controller="secondTabCtrl" ng-init="downloadData()">
 
-<div class="main-container">
-    <p id="buttons">
-        <button type="button"><i class="fa fa-arrow-left fa-lg"></i> </button>
-        <br />
-        <button type="button"><i class="fa fa-arrow-right fa-lg"></i> </button>
-    </p>
-    
-    <div id="master_table">
-
-        <div ng-app="secondTab">
-
-            <div ng-controller="secondTabCtrl" ng-init="downloadData()">
-
-                <ul class="todo-list" style="list-style-type: none">
-                    <li ng-repeat="item in Items">
-                        <div class="row">
-                            <div class="col-xs-10">
-                                <div class="view">
-                                    <input class="toggle" type="checkbox">
-                                    <label>{{ item.Item}}</label>
+            <div class="row">
+                <div class="column" style="background-color:#aaa;">
+                    <ul class="todo-list" style="list-style-type: none">
+                        <li ng-repeat="item in LHSItems">
+                            <div class="row">
+                                <div>
+                                    <div class="view">
+                                        <input class="toggle" type="checkbox" ng-model="LHSItems[$index].IsChecked">
+                                        <label>{{ item.Item}}</label>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-xs-2">
-
-                                <div class="view">
-                                    <input class="toggle" type="checkbox">
-                                    <label>{{ item.Item}}</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <div style="padding-top:100px;padding-left:40%;">
+                        <p id="buttons">
+                            <button type="button" ng-click="moveToLeft(RHSItems, LHSItems)"><i class="fa fa-arrow-left fa-lg "></i> </button>
+                            <br />
+                            <button type="button"  ng-click="moveToRight(LHSItems, RHSItems)"><i class="fa fa-arrow-right fa-lg"></i> </button>
+                        </p>
+                    </div>
+                </div>
+                <div class="column" style="background-color:#aaa;">
+                    <ul class="todo-list" style="list-style-type: none">
+                        <li ng-repeat="item in RHSItems">
+                            <div class="row">
+                                <div>
+                                    <div class="view">
+                                        <input class="toggle" type="checkbox" ng-model="RHSItems[$index].IsChecked">
+                                        <label>{{ item.Item}}</label>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </li>
-                </ul>
-
-
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
-
 </div>
+
+
 
 

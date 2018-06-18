@@ -16,34 +16,34 @@ namespace TechScreen.Controllers
 
             {
                 new LHSItem{
-                Item = "Item1"
+                Item = "Apple"
                 },
                 new LHSItem{
-                Item = "Item2"
+                Item = "Pear"
                 },
                 new LHSItem{
-                Item = "Item3"
+                Item = "Grape"
                 },
                 new LHSItem{
-                Item = "Item4"
+                Item = "Pineapple"
                 },
                 new LHSItem{
-                Item = "Item5"
+                Item = "Orange"
                 },
                 new LHSItem{
-                Item = "Item6"
+                Item = "Banana"
                 },
                 new LHSItem{
-                Item = "Item7"
+                Item = "watermelon"
                 },
                 new LHSItem{
-                Item = "Item8"
+                Item = "Plum"
                 },
                 new LHSItem{
-                Item = "Item9"
+                Item = "Cherry"
                 },
                 new LHSItem{
-                Item = "Item10"
+                Item = "Kiwifruit"
                 }
 
 
